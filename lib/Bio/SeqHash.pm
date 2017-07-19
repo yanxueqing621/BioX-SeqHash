@@ -65,7 +65,7 @@ sub fa2hs {
       $hs{$name} .= $line;
     }
   }
-  close(FILE);
+  close($file);
   return \%hs;
 }
 
