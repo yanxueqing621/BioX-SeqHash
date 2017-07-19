@@ -1,10 +1,10 @@
 # NAME
 
-Bio::SeqHash - get one or more sequences from a FASTA file quickly.
+BioX::SeqHash - get one or more sequences from a FASTA file quickly.
 
 # VERSION
 
-version 0.1.0
+version 0.1.1
 
 # SYNOPSIS
 
