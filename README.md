@@ -1,0 +1,10 @@
+# NAME
+
+Bio-SeqHash -
+
+# VERSION
+
+# AUTHOR
+
+# COPYRIGHT AND LICENSE
+
