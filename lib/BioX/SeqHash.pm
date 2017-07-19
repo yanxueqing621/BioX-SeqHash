@@ -1,4 +1,4 @@
-package Bio::SeqHash;
+package BioX::SeqHash;
 use strict;
 use warnings;
 use Exporter 'import';
