@@ -18,6 +18,11 @@ our @EXPORT_OK = qw(fa2hs);
   my $seq_fa = $obj->get_id_seq("seq_id"); # get the sequence of "seq_id"(in the FASTA format)
   $obj->get_seqs_batch('id_list.txt', 'output.fa');  # extract specified sequence to output file
 
+  # use it in Common mode;
+
+  use Bio::SeqHash "fa2hs";
+  my $hs = fa2hs("in.fa");
+
 
 =head1 DESCRIPTION
 
