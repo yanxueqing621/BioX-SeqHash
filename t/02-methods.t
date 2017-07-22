@@ -5,7 +5,7 @@ use IO::All;
 
 my $module;
 BEGIN {
-  $module = 'BioX::SeqHash';
+  $module = 'Bio::SeqHash';
   use_ok($module);
 }
 my @attrs = qw();

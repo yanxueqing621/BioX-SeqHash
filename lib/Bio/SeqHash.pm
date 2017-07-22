@@ -1,4 +1,4 @@
-package BioX::SeqHash;
+package Bio::SeqHash;
 use strict;
 use warnings;
 use Exporter 'import';
@@ -26,10 +26,10 @@ our @EXPORT_OK = qw(fa2hs);
 
 =head1 DESCRIPTION
 
-  Currently, there do have some modules that can operate the FASTA file such as Bio::SeqIO, 
-  But it only provide some basic operation to obtain the information about sequence. In my daily work,
-  I still have to write some repetitive code. So this module is write to perform a deeper wrapper for operating FASTA file
-  Notice: this module is not suitable for the FASTA file that is extremble big.
+Currently, there do have some modules that can operate the FASTA file such as Bio::SeqIO, 
+But it only provide some basic operation to obtain the information about sequence. In my daily work,
+I still have to write some repetitive code. So this module is write to perform a deeper wrapper for operating FASTA file
+Notice: this module is not suitable for the FASTA file that is extremble big.
 
 
 =head1 METHODS
@@ -38,9 +38,7 @@ our @EXPORT_OK = qw(fa2hs);
 
 sub new {
   my $class = shift;
-  my $self = {
-    @_
-  };
+  my $self =  ref $_[0] ? %{ $_[0] } : @_;
   $self->{file} || die `pod2text $0`;
   bless $self, $class;
 }
