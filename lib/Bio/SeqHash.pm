@@ -38,8 +38,8 @@ Notice: this module is not suitable for the FASTA file that is extremble big.
 
 sub new {
   my $class = shift;
-  my $self =  ref $_[0] ? %{ $_[0] } : @_;
-  $self->{file} || die `pod2text $0`;
+  my $self =  ref $_[0] ? $_[0] : {@_};
+  $self->{file} || die `file parameter is not exist`;
   bless $self, $class;
 }
 
