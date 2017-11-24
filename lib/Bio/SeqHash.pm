@@ -57,7 +57,7 @@ sub fa2hs {
   my (%hs, $name);
   while (my $line = <$file>) {
     chomp($line);
-    if ($line =~/^>(.+?)\s/) {
+    if ($line =~/^>(\S+)/) {
       $name = $1;
     } else {
       $hs{$name} .= $line;
